@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Rows>
+	<!-- out of bounds int too small -->
+	<Row>
+		<Coordinate1>A0</Coordinate1>
+		<Coordinate2>A8</Coordinate2>
+	</Row>
+	<!-- out of bounds int too large -->
+	<Row>
+		<Coordinate1>A1</Coordinate1>
+		<Coordinate2>A9</Coordinate2>
+	</Row>
+	<!-- out of bounds alpha too large -->
+	<Row>
+		<Coordinate1>I1</Coordinate1>
+		<Coordinate2>I8</Coordinate2>
+	</Row>
+	<!-- wrong format -->
+	<Row>
+		<Coordinate1>1A</Coordinate1>
+		<Coordinate2>3A</Coordinate2>
+	</Row>
+	<!-- invalid characters -->
+	<Row>
+		<Coordinate1>#3</Coordinate1>
+		<Coordinate2>A3</Coordinate2>
+	</Row>
+	<!-- diagonal -->
+	<Row>
+		<Coordinate1>A1</Coordinate1>
+		<Coordinate2>B3</Coordinate2>
+	</Row>
+	<!-- too long - numeric axis -->
+	<Row>
+		<Coordinate1>A1</Coordinate1>
+		<Coordinate2>A4</Coordinate2>
+	</Row>
+	<!-- too long - alpha axis -->
+	<Row>
+		<Coordinate1>A1</Coordinate1>
+		<Coordinate2>D1</Coordinate2>
+	</Row>
+	<!-- too short - numeric axis -->
+	<Row>
+		<Coordinate1>A1</Coordinate1>
+		<Coordinate2>A2</Coordinate2>
+	</Row>
+	<!-- too short - alpha axis -->
+	<Row>
+		<Coordinate1>A1</Coordinate1>
+		<Coordinate2>B1</Coordinate2>
+	</Row>
+  <!-- Same start and end -->
+	<Row>
+		<Coordinate1>A1</Coordinate1>
+		<Coordinate2>A1</Coordinate2>
+	</Row>
+</Rows>
