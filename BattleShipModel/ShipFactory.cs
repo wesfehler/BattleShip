@@ -23,7 +23,7 @@ namespace BattleShipModel
             {
                 return _shipTypes
                     .Select(type => CreateSpecific(type, shipType, new BoardCoordinate(start), new BoardCoordinate(end)))
-                    .First(mammal => mammal != null);
+                    .First(ship => ship != null);
             }
             catch (Exception)
             {
@@ -34,9 +34,9 @@ namespace BattleShipModel
         public Ship CreateSpecific(Type type, ShipType shipEnumType, BoardCoordinate startCoordinate,
             BoardCoordinate endCoordinate)
         {
-            var mammalInstance = (Ship) Activator.CreateInstance(type, startCoordinate, endCoordinate);
+            var shipInstance = (Ship) Activator.CreateInstance(type, startCoordinate, endCoordinate);
 
-            return mammalInstance.Is(shipEnumType) ? mammalInstance : null;
+            return shipInstance.Is(shipEnumType) ? shipInstance : null;
         }
     }
 }
